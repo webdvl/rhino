@@ -155,8 +155,8 @@ public final class NativeGenerator extends IdScriptableObject {
         }
     }
 
-    private Object resume(Context cx, Scriptable scope, int operation,
-                          Object value)
+    Object resume(Context cx, Scriptable scope, int operation,
+                  Object value)
     {
         if (savedState == null) {
             if (operation == GENERATOR_CLOSE)

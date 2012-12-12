@@ -32,7 +32,7 @@ import org.mozilla.classfile.ClassFileWriter;
  */
 public class PolicySecurityController extends SecurityController
 {
-    private static final byte[] secureCallerImplBytecode = loadBytecode();
+    static final byte[] secureCallerImplBytecode = loadBytecode();
 
     // We're storing a CodeSource -> (ClassLoader -> SecureRenderer), since we
     // need to have one renderer per class loader. We're using weak hash maps

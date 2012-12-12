@@ -2575,7 +2575,7 @@ public class Context
 
     private SecurityController securityController;
     private boolean hasClassShutter;
-    private ClassShutter classShutter;
+    ClassShutter classShutter;
     private ErrorReporter errorReporter;
     RegExpProxy regExpProxy;
     private Locale locale;

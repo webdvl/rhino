@@ -79,11 +79,11 @@ public class Parser
     // during function parsing.  See PerFunctionVariables class below.
     ScriptNode currentScriptOrFn;
     Scope currentScope;
-    private int endFlags;
-    private boolean inForInit;  // bound temporarily during forStatement()
-    private Map<String,LabeledStatement> labelSet;
-    private List<Loop> loopSet;
-    private List<Jump> loopAndSwitchSet;
+    int endFlags;
+    boolean inForInit;  // bound temporarily during forStatement()
+    Map<String,LabeledStatement> labelSet;
+    List<Loop> loopSet;
+    List<Jump> loopAndSwitchSet;
     // end of per function variables
 
     // Lacking 2-token lookahead, labels become a problem.

@@ -53,4 +53,15 @@ through the LiveConnect, should implement this interface.
      * @return whether or not to reveal this class to scripts
      */
     public boolean visibleToScripts(String fullClassName);
+
+    /**
+     * Returns true iff the Java class object should be exposed to scripts.
+     * <p/>
+     * An embedding may filter which Java classes are exposed through 
+     * LiveConnect to JavaScript scripts.
+     * <p/>
+     * @param classObject the class object to validate.
+     * @return whether or not to reveal this class to scripts.
+     */
+    public boolean visibleToScripts(Class<?> classObject);
 }
